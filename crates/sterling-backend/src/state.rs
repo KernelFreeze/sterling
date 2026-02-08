@@ -1,13 +1,16 @@
 use std::sync::Arc;
 
+use typed_builder::TypedBuilder;
+
 #[derive(Debug, Clone)]
 pub struct State(Arc<StateInner>);
 
-#[derive(Debug)]
+#[derive(Debug, TypedBuilder)]
 struct StateInner {}
 
-impl Default for State {
-    fn default() -> Self {
-        State(Arc::new(StateInner {}))
+impl State {
+    pub fn new() -> Self {
+        let inner = StateInner::builder().build();
+        State(Arc::new(inner))
     }
 }

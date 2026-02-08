@@ -1,10 +1,8 @@
 mod routes;
 mod state;
 
-use std::{
-    env::var,
-    net::{IpAddr, SocketAddr},
-};
+use std::env::var;
+use std::net::{IpAddr, SocketAddr};
 
 use thiserror::Error;
 use tokio::net::TcpListener;
@@ -40,7 +38,7 @@ pub enum BindAddressError {
 
 #[tokio::main]
 async fn main() -> Result<(), Error> {
-    let app = routes::router().with_state(State::default());
+    let app = routes::router().with_state(State::new());
 
     let socket_addr = socket_address()?;
     let listener = TcpListener::bind(socket_addr).await?;

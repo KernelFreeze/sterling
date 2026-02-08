@@ -8,5 +8,7 @@ readme.workspace = true
 
 [dependencies]
 axum = "0.8.8"
+derive_more = { version = "2.1.1", features = ["deref"] }
 thiserror = "2.0.18"
 tokio = { version = "1.49.0", features = ["rt-multi-thread", "macros", "net"] }
+typed-builder = "0.23.2"

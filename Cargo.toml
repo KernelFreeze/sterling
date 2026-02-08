@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/sterling-backend","crates/sterling-core", "crates/sterling-frontend-chat", "crates/sterling-frontend-cli", "crates/sterling-provider-openai", "sterling-provider-anthropic"]
+members = ["crates/*"]
 resolver = "2"
 
 [workspace.dependencies]
@@ -10,4 +10,3 @@ authors = ["Celeste Peláez <celeste@etheryal.net>"]
 edition = "2024"
 license = "MIT or Apache-2.0"
 readme = "./README.md"
-
