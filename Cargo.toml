@@ -3,6 +3,12 @@ members = ["crates/*"]
 resolver = "2"
 
 [workspace.dependencies]
+sterling-core = { path = "crates/sterling-core" }
+reqwest = { version = "0.13.2", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+typed-builder = "0.23"
 
 [workspace.package]
 version = "0.1.0"

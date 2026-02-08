@@ -7,3 +7,9 @@ license.workspace = true
 readme.workspace = true
 
 [dependencies]
+sterling-core = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+typed-builder = { workspace = true }
