@@ -1,0 +1,9 @@
+[package]
+name = "sterling-frontend-chat"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+
+[dependencies]

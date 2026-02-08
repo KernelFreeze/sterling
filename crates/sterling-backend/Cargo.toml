@@ -1,0 +1,12 @@
+[package]
+name = "sterling-backend"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+
+[dependencies]
+axum = "0.8.8"
+thiserror = "2.0.18"
+tokio = { version = "1.49.0", features = ["rt-multi-thread", "macros", "net"] }
